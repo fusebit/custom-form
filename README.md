@@ -6,7 +6,7 @@ General flow:
 
 1. Client app creates a new session that specifies the redirect URL of the final callback.
 2. Client redirects the browser to the Fusebit Function and provides the session Id.
-3. User fills out a web form.
+3. User fills out the web form.
 4. The form post-back stores the collected information in the session and redirects back to the client application.
 
 ## Create the function
