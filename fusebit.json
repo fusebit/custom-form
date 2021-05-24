@@ -1,0 +1,51 @@
+{
+  "fuseVersion": "1.9.2",
+  "metadata": {
+    "fusebit": {
+      "editor": {
+        "navigationPanel": {
+          "hideFiles": [
+            "index.js",
+            "form.html"
+          ],
+          "selectFile": "form.js",
+          "hideComputeSettings": true,
+          "hideConfigurationSettings": false,
+          "hideScheduleSettings": true,
+          "hideRunnerTool": false
+        },
+        "actionPanel": {
+          "theme": "light",
+          "enableCodeOnlyToggle": false,
+          "enableFullScreen": false,
+          "enableRun": true,
+          "enableSave": true,
+          "enableClose": false
+        }
+      }
+    }
+  },
+  "compute": {
+    "memorySize": 128,
+    "timeout": 30,
+    "staticIp": false
+  },
+  "computeSerialized": "memorySize=128\ntimeout=30\nstaticIp=false",
+  "security": {
+    "authentication": "optional",
+    "authorization": [
+      {
+        "action": "function:execute",
+        "resource": "/account/{{accountId}}/subscription/{{subscriptionId}}/boundary/{{boundaryId}}/function/{{functionId}}/"
+      }
+    ],
+    "functionPermissions": {
+      "allow": [
+        {
+          "action": "storage:*",
+          "resource": "/account/{{accountId}}/subscription/{{subscriptionId}}/storage/boundary/{{boundaryId}}/function/{{functionId}}/"
+        }
+      ]
+    }
+  }
+}
