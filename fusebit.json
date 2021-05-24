@@ -6,7 +6,8 @@
         "navigationPanel": {
           "hideFiles": [
             "index.js",
-            "form.html"
+            "form.html",
+            "README.md"
           ],
           "selectFile": "form.js",
           "hideComputeSettings": true,
